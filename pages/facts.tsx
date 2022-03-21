@@ -1,10 +1,23 @@
-import Link from "next/link";
+import Layout from "../components/layout";
+import Image from "next/image";
+import Avatar from "../assets/image/avatar.jpeg";
 
-const Facts = () => {
-  return (
-    <div>
-      <h1 className="my-5 text-2xl ">Random facts about me</h1>
-      <ul className="h-32 lg:h-48 overflow-hidden random-facts-list">
+const FactsPage = () => {
+
+    return(
+        <Layout>
+                    <div className="flex my-10 justify-center">
+          <div className="mr-2">
+            <h1 className="text-5xl">HIREOO</h1>
+            <p>Seize the day ☀️ ｜Build my idea 💡</p>
+          </div>
+          <div className="flex justify-center">
+            <Image src={Avatar} width={80} height={80} className="rounded-full" alt=""/>
+          </div>
+        </div>
+        <main>
+        <h1 className="my-5 text-2xl ">Random facts about me</h1>
+      <ul className=" random-facts-list">
         <li className="lg:text-base">
           🥛 I drink a bottle of milk tea every day without ice and sugar, but
           pearls.
@@ -45,15 +58,12 @@ const Facts = () => {
           it tells me a clear direction. 😸
         </li>
       </ul>
-      <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:ring-red-100 dark:focus:ring-red-400">
-          <Link href="/facts">
-        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-          Know More?
-        </span>
-        </Link>
-      </button>
-    </div>
-  );
-};
+        </main>
+        <footer className="mt-12 flex  justify-center">
+        © 2020 Copyright: ✨✨ Hireoo ✨✨
+        </footer>
+        </Layout>
+    )
+}
 
-export default Facts;
+export default FactsPage;
