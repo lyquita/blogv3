@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.nav-list li{
+    margin-right: 3rem;
+}
+
+.random-facts-list{
+    margin-bottom: 10px;
+}
+
+.random-facts-list li {
+    margin-bottom: 10px;
+}
