@@ -972,3 +972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 20rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
