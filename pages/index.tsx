@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             <h1 className="text-5xl">HIREOO</h1>
             <p>Seize the day ☀️ ｜Build my idea 💡</p>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src={Avatar} width={80} height={80} className="rounded-full" alt=""/>
           </div>
         </div>
