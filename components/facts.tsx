@@ -8,7 +8,7 @@ const Facts = () => {
           pearls.
         </li>
         <li>
-          🗺 I won't stay at home during my weekend, I love to explore cafe &
+          🗺 I wont stay at home during my weekend, I love to explore cafe &
           restaurant ... Find a cozy spot in a city make me relax.🤟
         </li>
         <li>
@@ -17,7 +17,7 @@ const Facts = () => {
         </li>
         <li>
           📸 I love to record my life and share my opinion of the world. But I
-          seldom shoot video recently due to didn't have time ...
+          seldom shoot video recently due to didnt have time ...
         </li>
         <li>
           📝 Although I get used to writing stuff in a big moment, it quite
@@ -29,13 +29,13 @@ const Facts = () => {
           shaking my body ~ just keep moving ~~
         </li>
         <li>
-          🥯 Seriously, I think I'm a bagel lover🥯, I have tasted most of the
+          🥯 Seriously, I think Im a bagel lover🥯, I have tasted most of the
           bagel in shanghai. Mexico food is quite fit for my taste, especially
           burrito🌯 and taco🌮 ~~~
         </li>
         <li>
           👀 Do nothing, or do everything I can. Before I real think throughout
-          it, I won't take my first step.
+          it, I wont take my first step.
         </li>
         <li>
           📒I love to plan for the next day, following my schedule gives me

@@ -1,7 +1,7 @@
 const Timeline = () => {
   return (
     <div>
-      <h1 className="my-5 text-2xl ">What's new in my life?</h1>
+      <h1 className="my-5 text-2xl ">Whats new in my life?</h1>
       <div className="my-5">
         <h1 className="text-base"> 2020 </h1>
         <ul>

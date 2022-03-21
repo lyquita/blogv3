@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <div >
       <Head>
-        <title>What's the next?</title>
+        <title>Whats the next?</title>
         <meta name="description" content="Hireoo's blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             <p>Seize the day ☀️ ｜Build my idea 💡</p>
           </div>
           <div>
-            <Image src={Avatar} width={80} height={80} className="rounded-full"/>
+            <Image src={Avatar} width={80} height={80} className="rounded-full" alt=""/>
           </div>
         </div>
         <div>

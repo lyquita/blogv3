@@ -1,7 +1,7 @@
 const Thinkings = () => {
   return (
     <div>
-      <h1 className="my-5 text-2xl ">I'm thinking</h1>
+      <h1 className="my-5 text-2xl ">Im thinking</h1>
       <div className="grid grid-cols-3">
         <div className="bg-white p-3 m-2 shadow">
           <p className="mb-3">
