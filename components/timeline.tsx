@@ -2,8 +2,8 @@ const Timeline = () => {
   return (
     <div>
       <h1 className="my-5 text-2xl ">Whats new in my life?</h1>
-      <div className="my-5">
-        <h1 className="text-base"> 2020 </h1>
+      <div className="my-5 lg:text-base">
+        <h1 className="text-base font-bold"> 2020 </h1>
         <ul>
           <li>
             2020-09-18: Decide to learn about React, and aim to build my idea
@@ -12,8 +12,8 @@ const Timeline = () => {
           <li>2020-05-14： The first time to start my side hustle business</li>
         </ul>
       </div>
-      <div className="my-5">
-        <h1 className="text-base"> 2019 </h1>
+      <div className="my-5 lg:text-base">
+        <h1 className="text-base font-bold"> 2019 </h1>
         <ul>
           <li>
             2019-07-01：The first time to take responsibility for the whole
@@ -23,8 +23,8 @@ const Timeline = () => {
           <li>2020-05-14： The first time to start my side hustle business</li>
         </ul>
       </div>
-      <div className="my-5">
-        <h1 className="text-base"> 2018 </h1>
+      <div className="my-5 lg:text-base">
+        <h1 className="text-base font-bold"> 2018 </h1>
         <ul>
           <li>
             2020-09-18: Decide to learn about React, and aim to build my idea
