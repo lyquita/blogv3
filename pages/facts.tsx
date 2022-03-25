@@ -5,6 +5,9 @@ import Avatar from "../assets/image/avatar.jpeg";
 const FactsPage = () => {
 
     return(
+      <div className="dark:text-[#DCA54C]">
+
+
         <Layout>
                     <div className="flex my-10 justify-center">
           <div className="mr-2">
@@ -63,6 +66,8 @@ const FactsPage = () => {
         © 2020 Copyright: ✨✨ Hireoo ✨✨
         </footer>
         </Layout>
+      </div>
+
     )
 }
 
