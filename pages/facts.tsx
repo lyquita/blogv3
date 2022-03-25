@@ -16,7 +16,7 @@ const FactsPage = () => {
           </div>
         </div>
         <main>
-        <h1 className="my-5 text-2xl ">Random facts about me</h1>
+        <h1 className="my-5 text-2xl dark:text-[#DCA54C]">Random facts about me</h1>
       <ul className=" random-facts-list">
         <li className="lg:text-base">
           🥛 I drink a bottle of milk tea every day without ice and sugar, but

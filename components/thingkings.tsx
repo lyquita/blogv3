@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Thinkings = () => {
   return (
-    <div>
+    <div className="dark:text-[#DCA54C]">
       <h1 className="my-5 text-2xl ">Im thinking</h1>
       <div className="grid grid-cols-3">
         <div className="bg-white p-3 m-2 shadow">

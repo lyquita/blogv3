@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Writing = () => {
   return (
-    <div>
+    <div className="dark:text-[#DCA54C]">
       <h1 className="my-5 text-2xl ">Write something...</h1>
       <ul>
         <li>

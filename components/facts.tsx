@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Facts = () => {
   return (
-    <div>
-      <h1 className="my-5 text-2xl ">Random facts about me</h1>
-      <ul className="h-32 lg:h-48 overflow-hidden random-facts-list">
+    <div className="dark:text-[#DCA54C]">
+      <h1 className="my-5 text-2xl dark:text-[#DCA54C]">Random facts about me</h1>
+      <ul className="h-32 lg:h-48 overflow-hidden random-facts-list ">
         <li className="lg:text-base">
           🥛 I drink a bottle of milk tea every day without ice and sugar, but
           pearls.

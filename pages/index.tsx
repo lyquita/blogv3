@@ -14,7 +14,7 @@ import Thinking from "./thinkings";
 
 const Home: NextPage = () => {
   return (
-    <div >
+    <div className="dark:text-[#DCA54C]">
       <Head>
         <title>Whats the next?</title>
         <meta name="description" content="Hireoo's blog" />
@@ -23,8 +23,8 @@ const Home: NextPage = () => {
       <Layout >
         <div className="flex my-10 justify-center">
           <div className="mr-2">
-            <h1 className="text-5xl">HIREOO</h1>
-            <p>Seize the day ☀️ ｜Build my idea 💡</p>
+            <h1 className="text-5xl ">HIREOO</h1>
+            <p className="dark:text-[#DCA54C]">Seize the day ☀️ ｜Build my idea 💡</p>
           </div>
           <div className="flex justify-center">
             <Image src={Avatar} width={80} height={80} className="rounded-full" alt=""/>

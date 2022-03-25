@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Timeline = () => {
   return (
-    <div>
+    <div className="dark:text-[#DCA54C]">
       <h1 className="my-5 text-2xl ">Whats new in my life?</h1>
       <div className="my-5 lg:text-base">
         <h1 className="text-base font-bold"> 2020 </h1>
