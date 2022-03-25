@@ -6,31 +6,31 @@ const Writing = () => {
       <h1 className="my-5 text-2xl ">Write something...</h1>
       <ul>
         <li>
-          <a>
+          <a className="hover:text-[#5bd692] hover:cursor-pointer">
             <p className="text-base">我在过养老式的生活...</p>
             <p className="mb-3">October 08, 2020</p>
           </a>
         </li>
         <li>
-          <a>
+        <a className="hover:text-[#5bd692] hover:cursor-pointer">
             <p className="text-base">我在过养老式的生活...</p>
             <p className="mb-3">October 08, 2020</p>
           </a>
         </li>
         <li>
-          <a>
+        <a className="hover:text-[#5bd692] hover:cursor-pointer">
             <p className="text-base">我在过养老式的生活...</p>
             <p className="mb-3">October 08, 2020</p>
           </a>
         </li>
         <li>
-          <a>
+        <a className="hover:text-[#5bd692] hover:cursor-pointer">
             <p className="text-base">我在过养老式的生活...</p>
             <p className="mb-3">October 08, 2020</p>
           </a>
         </li>
         <li>
-          <a>
+        <a className="hover:text-[#5bd692] hover:cursor-pointer">
             <p className="text-base">我在过养老式的生活...</p>
             <p className="mb-3">October 08, 2020</p>
           </a>

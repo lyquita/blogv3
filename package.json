@@ -10,6 +10,7 @@
     "tailwind": "npx tailwindcss -i ./styles/globals.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.11.1",
     "next": "12.1.0",
     "next-themes": "^0.1.1",
