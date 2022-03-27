@@ -11,8 +11,20 @@ import Writing from "../components/writing";
 import styles from "../styles/Home.module.css";
 import Post from "./posts";
 import Thinking from "./thinkings";
+import axios from 'axios';
+import { IFacts } from "../interface/facts";
 
-const Home: NextPage = () => {
+export async function getServerSideProps(){
+  const facts = await axios.get('https://api-blog.hireoo.fun/facts/')
+  const posts = await axios.get('https://api-blog.hireoo.fun/posts/')
+
+  const factsData:IFacts[] = facts.data
+  const postsData = posts.data
+
+  return { props : {factsData, postsData}}
+}
+
+const Home: NextPage = ({factsData, postsData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <Head>
@@ -32,7 +44,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <Image src={Banner1} alt="" />
-          <Facts />
+          <Facts factsData={factsData}/>
           <Thinkings />
           <Writing />
           <Timeline />
@@ -44,5 +56,7 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+
 
 export default Home;
