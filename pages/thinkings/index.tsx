@@ -1,8 +1,17 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import Avatar from "../../assets/image/avatar.jpeg";
+import axios from "axios";
 
-const Thinking = () => {
+export async function getServerSideProps() {
+  const thinkings = await axios.get("https://api-blog.hireoo.fun/thinkings/");
+
+  const thinkingsData = thinkings.data;
+
+  return { props: {thinkingsData} };
+}
+
+const Thinking = ({thinkingsData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
     <Layout>
@@ -24,70 +33,15 @@ const Thinking = () => {
       <main>
       <h1 className="my-5 text-2xl ">Im thinking</h1>
       <div className="grid grid-cols-1 sm:grid-cols-3">
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... ods, for no reason...
-            odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no s, for no reason... ods, for no
-            reason... od... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reasons, for no reason... ods, for no
-            reason... od... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
-        <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div> <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div> <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div> <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div> <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div> <div className="bg-white p-3 m-2 shadow card">
-          <p className="mb-3 lg:text-base">
-            feel down in the dumps, for no reason... odd...
-          </p>
-          <p>2020-11-14 19:36</p>
-        </div>
+      {thinkingsData.map((item) => (
+          <div
+            className="bg-white p-3 m-2 card shadow hover:text-[#5bd692] "
+            key={item.id}
+          >
+            <p className="mb-3 lg:text-base ">{item.content}</p>
+            <p>{item.published_at}</p>
+          </div>
+        ))}
       </div>
       </main>
       <footer className="mt-12 flex justify-center">

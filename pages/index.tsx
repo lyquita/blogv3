@@ -17,14 +17,16 @@ import { IFacts } from "../interface/facts";
 export async function getServerSideProps(){
   const facts = await axios.get('https://api-blog.hireoo.fun/facts/')
   const posts = await axios.get('https://api-blog.hireoo.fun/posts/')
+  const thinkings = await axios.get('https://api-blog.hireoo.fun/thinkings/')
 
   const factsData:IFacts[] = facts.data
+  const thinkingsData = thinkings.data
   const postsData = posts.data
 
-  return { props : {factsData, postsData}}
+  return { props : {factsData, postsData, thinkingsData}}
 }
 
-const Home: NextPage = ({factsData, postsData}) => {
+const Home: NextPage = ({factsData, postsDat, thinkingsData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <Head>
@@ -45,7 +47,7 @@ const Home: NextPage = ({factsData, postsData}) => {
         <div>
           <Image src={Banner1} alt="" />
           <Facts factsData={factsData}/>
-          <Thinkings />
+          <Thinkings thinkingsData={thinkingsData} />
           <Writing />
           <Timeline />
         </div>
