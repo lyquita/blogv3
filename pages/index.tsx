@@ -26,7 +26,7 @@ export async function getServerSideProps(){
   return { props : {factsData, postsData, thinkingsData}}
 }
 
-const Home: NextPage = ({factsData, postsDat, thinkingsData}) => {
+const Home: NextPage = ({factsData, postsData, thinkingsData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <Head>
@@ -48,7 +48,7 @@ const Home: NextPage = ({factsData, postsDat, thinkingsData}) => {
           <Image src={Banner1} alt="" />
           <Facts factsData={factsData}/>
           <Thinkings thinkingsData={thinkingsData} />
-          <Writing />
+          <Writing postsData={postsData}/>
           <Timeline />
         </div>
         <footer className="mt-12 flex justify-center">
