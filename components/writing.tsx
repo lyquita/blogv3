@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const Writing = ({ postsData }) => {
-  console.log("post", postsData);
   return (
     <div className="dark:text-[#DCA54C]">
       <h1 className="my-5 text-2xl ">Write something...</h1>
