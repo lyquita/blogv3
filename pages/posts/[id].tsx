@@ -18,7 +18,7 @@ export async function getServerSideProps(){
 const Post = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [postDetail, setPostDetail] = useState()
+  const [postDetail, setPostDetail] = useState<any>()
   const [markdown, setMarkdown] = useState();
 
   useEffect(()=>{

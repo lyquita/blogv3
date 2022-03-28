@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IFacts } from "../interface/facts";
 
-const Facts: React.FC<IFacts[]> = ({ factsData }) => {
+const Facts:any = ({ factsData }) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <h1 className="my-5 text-2xl dark:text-[#DCA54C]">

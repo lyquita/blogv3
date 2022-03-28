@@ -26,7 +26,7 @@ export async function getServerSideProps(){
   return { props : {factsData, postsData, thinkingsData}}
 }
 
-const Home: NextPage = ({factsData, postsData, thinkingsData}) => {
+const Home:any= ({factsData, postsData, thinkingsData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <Head>
