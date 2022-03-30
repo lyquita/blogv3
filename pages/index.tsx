@@ -18,15 +18,17 @@ export async function getServerSideProps(){
   const facts = await axios.get('https://api-blog.hireoo.fun/facts/')
   const posts = await axios.get('https://api-blog.hireoo.fun/posts/')
   const thinkings = await axios.get('https://api-blog.hireoo.fun/thinkings/')
+  const timelines = await axios.get('https://api-blog.hireoo.fun/timelines/')
 
   const factsData:IFacts[] = facts.data
   const thinkingsData = thinkings.data
   const postsData = posts.data
+  const timelinesData = timelines.data
 
-  return { props : {factsData, postsData, thinkingsData}}
+  return { props : {factsData, postsData, thinkingsData, timelinesData}}
 }
 
-const Home:any= ({factsData, postsData, thinkingsData}) => {
+const Home:any= ({factsData, postsData, thinkingsData, timelinesData}) => {
   return (
     <div className="dark:text-[#DCA54C]">
       <Head>
@@ -49,7 +51,7 @@ const Home:any= ({factsData, postsData, thinkingsData}) => {
           <Facts factsData={factsData}/>
           <Thinkings thinkingsData={thinkingsData} />
           <Writing postsData={postsData}/>
-          <Timeline />
+          <Timeline timelinesData={timelinesData}/>
         </div>
         <footer className="mt-12 flex justify-center">
         © 2020 Copyright: ✨✨ Hireoo ✨✨
