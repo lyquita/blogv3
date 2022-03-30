@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import Avatar from "../../assets/image/avatar.jpeg";
 import axios from "axios";
+import moment from "moment";
 
 export async function getServerSideProps() {
   const thinkings = await axios.get("https://api-blog.hireoo.fun/thinkings/");
@@ -39,7 +40,8 @@ const Thinking = ({thinkingsData}) => {
             key={item.id}
           >
             <p className="mb-3 lg:text-base ">{item.content}</p>
-            <p>{item.published_at}</p>
+            <p>{moment(item.published_at).format('YYYY-MM-DD HH:mm')}</p>
+
           </div>
         ))}
       </div>

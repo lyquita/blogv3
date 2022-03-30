@@ -13,6 +13,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "axios": "^0.26.1",
     "daisyui": "^2.11.1",
+    "moment": "^2.29.1",
     "next": "12.1.0",
     "next-themes": "^0.1.1",
     "react": "17.0.2",

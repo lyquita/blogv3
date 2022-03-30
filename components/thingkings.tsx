@@ -1,3 +1,4 @@
+import moment from "moment";
 import Link from "next/link";
 
 const Thinkings = ({ thinkingsData }) => {
@@ -13,7 +14,7 @@ const Thinkings = ({ thinkingsData }) => {
             key={item.id}
           >
             <p className="mb-3 lg:text-base ">{item.content}</p>
-            <p>{item.published_at}</p>
+            <p>{moment(item.published_at).format('YYYY-MM-DD HH:mm')}</p>
           </div>
         ))}
       </div>
