@@ -34,7 +34,7 @@ const FactsPage = ({factsData}) => {
           <h1 className="my-5 text-2xl dark:text-[#DCA54C]">
             Random facts about me
           </h1>
-          <ul className="h-32 lg:h-48 overflow-hidden random-facts-list ">
+          <ul className="random-facts-list ">
             {factsData.map((item) => (
               <li className="lg:text-base" key={item.id}>
                 {item.value}
@@ -43,7 +43,7 @@ const FactsPage = ({factsData}) => {
           </ul>
         </main>
         <footer className="mt-12 flex  justify-center">
-          © 2020 Copyright: ✨✨ Hireoo ✨✨
+          © 2022 Copyright: ✨✨ Hireoo ✨✨
         </footer>
       </Layout>
     </div>

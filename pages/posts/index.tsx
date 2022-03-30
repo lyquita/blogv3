@@ -55,7 +55,7 @@ if(postsData){
   </div>
       </main>
       <footer className="mt-12 flex justify-center">
-      © 2020 Copyright: ✨✨ Hireoo ✨✨
+      © 2022 Copyright: ✨✨ Hireoo ✨✨
       </footer>
      </Layout>
      </div>
@@ -81,7 +81,7 @@ else{
  </div>
      </main>
      <footer className="mt-12 flex justify-center">
-     © 2020 Copyright: ✨✨ Hireoo ✨✨
+     © 2022 Copyright: ✨✨ Hireoo ✨✨
      </footer>
     </Layout>
     </div>

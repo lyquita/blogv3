@@ -54,7 +54,7 @@ const Home:any= ({factsData, postsData, thinkingsData, timelinesData}) => {
           <Timeline timelinesData={timelinesData}/>
         </div>
         <footer className="mt-12 flex justify-center">
-        © 2020 Copyright: ✨✨ Hireoo ✨✨
+        © 2022 Copyright: ✨✨ Hireoo ✨✨
         </footer>
       </Layout>
     </div>
