@@ -40,7 +40,7 @@ const Thinking = ({thinkingsData}) => {
             key={item.id}
           >
             <p className="mb-3 lg:text-base ">{item.content}</p>
-            <p>{moment(item.published_at).format('YYYY-MM-DD HH:mm')}</p>
+            <p>{moment(item.date).format('YYYY-MM-DD HH:mm')}</p>
 
           </div>
         ))}
