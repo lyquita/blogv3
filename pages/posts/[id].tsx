@@ -30,7 +30,7 @@ const Post = () => {
 
   if(postDetail){
     return (
-      <div>
+      <div className="dark:text-[#DCA54C]">
           <Layout>
           <article className="py-16 px-6 sm:px-8">
             <header>
@@ -40,7 +40,7 @@ const Post = () => {
                 </h1>
                 <hr className="mt-8 border-t-2 w-20 mx-auto"/>
             </header>
-            <div className="mt-8 mx-auto prose lg:prose-xl overflow-auto">
+            <div className="mt-8 mx-auto prose lg:prose-xl overflow-auto dark:text-[#DCA54C]">
            <ReactMarkdown  children={markdown} remarkPlugins={[remarkGfm]}/>
             </div>
           </article>
