@@ -11,10 +11,7 @@ const Layout: React.FC<{}> =({children})=>{
                    <Link href="/">Home</Link>
                </li>
                <li >
-                   <Link href="/posts/">Post</Link>
-               </li>
-               <li > 
-                   <Link href="/thinkings/">Thinking</Link>
+                   <Link href="/ideas/">Ideas</Link>
                </li>
                <li className="flex">
                  <button className="btn btn-xs mr-1" onClick={()=>{setTheme('dark')}}>🌃</button>
