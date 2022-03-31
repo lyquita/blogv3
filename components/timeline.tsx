@@ -8,6 +8,10 @@ const Timeline = ({timelinesData}) => {
   const year_2019 = 2019;
   const year_2018 = 2018;
   const year_2017 = 2017;
+  const year_2016 = 2016;
+  const year_2015 = 2015;
+  const year_2012 = 2012;
+  const year_1997 = 1997;
 
   const year_2022_list = []
   const year_2021_list = []
@@ -15,6 +19,10 @@ const Timeline = ({timelinesData}) => {
   const year_2019_list = []
   const year_2018_list = []
   const year_2017_list = []
+  const year_2016_list = []
+  const year_2015_list = []
+  const year_2012_list = []
+  const year_1997_list = []
 
 
   timelinesData.forEach(element => {
@@ -36,6 +44,18 @@ const Timeline = ({timelinesData}) => {
           break;
         case year_2017:
           year_2017_list.push(element);
+          break;
+        case year_2016:
+          year_2016_list.push(element);
+          break;
+        case year_2015:
+          year_2015_list.push(element);
+          break;
+        case year_2012:
+          year_2012_list.push(element);
+          break;
+        case year_1997:
+          year_1997_list.push(element);
           break;
         default:
           break
