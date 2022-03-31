@@ -77,7 +77,9 @@ const Timeline =({timelinesData}) => {
   
 
     return(
-        <Layout>
+      <div className="dark:text-[#DCA54C]">
+
+        <Layout >
             <div className="flex my-10 justify-center">
           <div className="mr-2">
             <h1 className="text-5xl">HIREOO</h1>
@@ -212,6 +214,7 @@ const Timeline =({timelinesData}) => {
         © 2022 Copyright: ✨✨ Hireoo ✨✨
         </footer>
         </Layout>
+        </div>
     )
 }
 
