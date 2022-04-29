@@ -25,7 +25,7 @@ const Post = (props) => {
             <header>
               <h1 className="flex flex-col items-center">
                 <span className="text-indigo-600 font-semibold tracking-wide uppercase">
-                  Introducing
+                  {published_at}
                 </span>
                 <span className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
                   {title}
