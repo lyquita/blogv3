@@ -15,17 +15,24 @@ import axios from 'axios';
 import { IFacts } from "../interface/facts";
 
 export async function getServerSideProps(){
-  const facts = await axios.get('https://api-blog.hireoo.fun/facts/')
-  const posts = await axios.get('https://api-blog.hireoo.fun/posts/')
-  const thinkings = await axios.get('https://api-blog.hireoo.fun/thinkings/')
-  const timelines = await axios.get('https://api-blog.hireoo.fun/timelines/')
+  try{
+    const facts = await axios.get('https://api-blog.hireoo.fun/facts/')
+    const posts = await axios.get('https://api-blog.hireoo.fun/posts/')
+    const thinkings = await axios.get('https://api-blog.hireoo.fun/thinkings/')
+    const timelines = await axios.get('https://api-blog.hireoo.fun/timelines/')
+    const factsData:IFacts[] = facts.data
+    const thinkingsData = thinkings.data
+    const postsData = posts.data
+    const timelinesData = timelines.data
+  
+    return { props : {factsData, postsData, thinkingsData, timelinesData}}
+  }
+  catch(err){
+    return console.log(err)
+  }
+ 
 
-  const factsData:IFacts[] = facts.data
-  const thinkingsData = thinkings.data
-  const postsData = posts.data
-  const timelinesData = timelines.data
 
-  return { props : {factsData, postsData, thinkingsData, timelinesData}}
 }
 
 const Home:any= ({factsData, postsData, thinkingsData, timelinesData}) => {

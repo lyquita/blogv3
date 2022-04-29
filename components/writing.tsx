@@ -9,7 +9,7 @@ const Writing = ({ postsData }) => {
           <li key={item.id}>
             <Link href={`/posts/${item.id}`}>
               <a className="hover:text-[#5bd692] hover:cursor-pointer">
-                <p className="text-base">{item.Title}</p>
+                <p className="text-base">{item.title}</p>
                 <p className="mb-3">{item.published_at}</p>
               </a>
             </Link>
