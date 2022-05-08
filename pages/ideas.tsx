@@ -2,6 +2,7 @@ import AdminDance from "../components/ideas/admin-dance";
 import Layout from "../components/layout";
 import Image from "next/image";
 import Avatar from "../assets/image/avatar.jpeg";
+import Fimo from "../components/ideas/fimo";
 
 const Ideas = () => {
   return (
@@ -24,12 +25,12 @@ const Ideas = () => {
         </div>
         <div>
           <AdminDance />
+          <Fimo />
         </div>
         <footer className="mt-12 flex justify-center">
-        © 2022 Copyright: ✨✨ Hireoo ✨✨
-      </footer>
+          © 2022 Copyright: ✨✨ Hireoo ✨✨
+        </footer>
       </Layout>
-   
     </div>
   );
 };
