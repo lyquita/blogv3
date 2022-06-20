@@ -2615,6 +2615,10 @@ html {
   height: 8rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-96 {
   height: 24rem;
 }
@@ -2625,10 +2629,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .cursor-pointer {
@@ -2659,6 +2659,10 @@ html {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2683,11 +2687,6 @@ html {
 .bg-\[\#FFFBF0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 240 / var(--tw-bg-opacity));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br {
@@ -2848,16 +2847,6 @@ html {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-primary-content {
-  --tw-text-opacity: 1;
-  color: hsl(var(--pc) / var(--tw-text-opacity));
-}
-
-.text-\[\#E6E7E9\] {
-  --tw-text-opacity: 1;
-  color: rgb(230 231 233 / var(--tw-text-opacity));
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2888,10 +2877,6 @@ html {
 
 .random-facts-list li {
   margin-bottom: 10px;
-}
-
-.hover\:w-96:hover {
-  width: 24rem;
 }
 
 .hover\:cursor-pointer:hover {
