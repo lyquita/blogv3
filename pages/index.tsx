@@ -66,6 +66,8 @@ const Home: any = ({ factsData, postsData, thinkingsData, timelinesData }) => {
         </div>
         <footer className="mt-12 flex justify-center">
           © 2022 Copyright: ✨✨ Hireoo ✨✨
+          <br></br>
+        沪ICP备2021027123号-1
         </footer>
       </Layout>
     </div>
